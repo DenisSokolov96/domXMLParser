@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><database>
+    <university name="РГАТУ">
+        <facultys>
+            <faculty name="ФАД">
+                <departments>
+                    <department name="Кафедра авиационных двигателей">
+                        <groups>
+                            <group name="кадгр1" val="15"/>
+                            <group name="кадгр2" val="17"/>
+                            <group name="кадгр3" val="16"/>
+                        <group name="кадгр4" val="5"/></groups>
+                    </department>
+                    <department name="Кафедра материаловедения, литья, сварки">
+                        <groups>
+                            <group name="кмгр1" val="25"/>
+                            <group name="кмгр2" val="27"/>
+                            <group name="кмгр3" val="26"/>
+                        </groups>
+                    </department>
+                    <department name="Кафедра общей и технической физики">
+                        <groups>
+                            <group name="кфгр1" val="20"/>
+                            <group name="кфгр2" val="21"/>
+                            <group name="кфгр3" val="23"/>
+                        </groups>
+                    </department>
+                    <department name="Кафедра графики">
+                        <groups>
+                            <group name="кггр1" val="30"/>
+                            <group name="кггр2" val="31"/>
+                            <group name="кггр3" val="33"/>
+                            <group name="кггр4" val="30"/>
+                        </groups>
+                    </department>
+                </departments>
+            </faculty>
+            <faculty name="ФАТ">
+                <departments>
+                    <department name="Кафедра технологии авиационных двигателей и общего машиностроения">
+                        <groups>
+                            <group name="ктадгр1" val="30"/>
+                            <group name="ктадгр2" val="31"/>
+                            <group name="ктадгр3" val="33"/>
+                        </groups>
+                    </department>
+                    <department name="Кафедра мехатронных систем и процессов формообразования имени С.С. Силина">
+                        <groups>
+                            <group name="кмсгр1" val="15"/>
+                            <group name="кмсгр2" val="10"/>
+                            <group name="кмсгр3" val="12"/>
+                        </groups>
+                    </department>
+                    <department name="Кафедра теоретической механики и сопротивления материалов">
+                        <groups>
+                            <group name="ктмгр1" val="15"/>
+                            <group name="ктмгр2" val="20"/>
+                        </groups>
+                    </department>
+                    <department name="Кафедра основы конструирования машин">
+                        <groups>
+                            <group name="ккмгр1" val="25"/>
+                            <group name="ккмгр2" val="23"/>
+                            <group name="ккмгр3" val="20"/>
+                        </groups>
+                    </department>
+                </departments>
+            </faculty>
+            <faculty name="ФРЭИ">
+                <departments>
+                    <department name="Кафедра вычислительных систем">
+                        <groups>
+                            <group name="квсгр1" val="15"/>
+                            <group name="квсгр2" val="13"/>
+                            <group name="квсгр3" val="10"/>
+                        </groups>
+                    </department>
+                    <department name="Кафедра радиоэлектронных и телекоммуникационных систем">
+                        <groups>
+                            <group name="кртсгр1" val="16"/>
+                            <group name="кртсгр2" val="15"/>
+                            <group name="кртсгр3" val="15"/>
+                        </groups>
+                    </department>
+                    <department name="Кафедра электротехники и промышленной электроники">
+                         <groups>
+                            <group name="кэпсгр1" val="14"/>
+                            <group name="кэпсгр2" val="12"/>
+                            <group name="кэпсгр3" val="10"/>
+                        </groups>
+                    </department>
+                    <department name="Кафедра высшей математики">
+                        <groups>
+                            <group name="квмсгр1" val="17"/>
+                            <group name="квмсгр2" val="11"/>
+                            <group name="квмсгр3" val="14"/>
+                        </groups>
+                    </department>
+                </departments>
+            </faculty>
+        </facultys>
+    </university>
+</database>

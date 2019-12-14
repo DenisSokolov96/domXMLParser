@@ -7,8 +7,11 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import java.io.File;
 import java.io.IOException;
+import java.util.logging.Logger;
 
 public class Validate {
+
+    private static Logger log = Logger.getLogger(Validate.class.getName());
 
     public static void getValidateXML() throws IOException, SAXException {
         validateXML();
@@ -26,11 +29,10 @@ public class Validate {
         Source source = new StreamSource("/home/denis/IntelliJIDEAProjects/xmlParser/src/main/resources/UniverChange.xml");
         try {
             validator.validate(source);
-            System.out.println("XML is valid.");
+            log.info("XML - valid");
         }
         catch (SAXException ex) {
-            System.out.println("XML is not valid.");
-            System.out.println(ex.getMessage());
+            log.info("XML - not valid.\n"+ex.getMessage());
         }
     }
 }

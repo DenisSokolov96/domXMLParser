@@ -11,10 +11,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.logging.Logger;
 
 public class MainClass {
 
-   static StringBuilder str = new StringBuilder();
+    static StringBuilder str = new StringBuilder();
+    private static Logger log = Logger.getLogger(MainClass.class.getName());
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
 
@@ -50,7 +52,7 @@ public class MainClass {
             if (foundedElement.hasChildNodes())
                 printInfoAboutAllChildNodes(foundedElement.getChildNodes(), 0);
         }
-
+        log.info("Вывод информации выполнен");
     }
 
     private static void printInfoAboutAllChildNodes(NodeList list, int t) {
@@ -113,7 +115,8 @@ public class MainClass {
             Source source = new DOMSource(document);
             Result result = new StreamResult(new FileOutputStream("/home/denis/IntelliJIDEAProjects/xmlParser/src/main/resources/UniverChange.xml"));
             transformer.transform(source, result);
-            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+
+            log.info("Данные записанные");
 
         } catch (TransformerException | FileNotFoundException e) {
             e.printStackTrace(System.out);

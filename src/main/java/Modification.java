@@ -3,7 +3,11 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.NodeList;
 
+import java.util.logging.Logger;
+
 public class Modification {
+
+    private static Logger log = Logger.getLogger(Modification.class.getName());
 
     public static void addElementXML(Document doc){
         addElement(doc);
@@ -27,5 +31,6 @@ public class Modification {
             }
 
         }
+        log.info("Элемент добавлен");
     }
 }

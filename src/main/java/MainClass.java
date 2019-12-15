@@ -11,12 +11,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class MainClass {
 
     static StringBuilder str = new StringBuilder();
-    private static Logger log = Logger.getLogger(MainClass.class.getName());
+    private static Logger log = Logger.getLogger(MainClass.class);
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
 
@@ -88,6 +88,7 @@ public class MainClass {
     }
 
     public static String changeattribut(String string){
+
         switch (string){
             case "university": return "Университет";
             case "faculty": return "Факультет";
@@ -108,7 +109,7 @@ public class MainClass {
         }
     }
 
-    private static void writeDocument(Document document) throws TransformerFactoryConfigurationError {
+    private static void writeDocument(Document document){
         try {
 
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
@@ -118,8 +119,10 @@ public class MainClass {
 
             log.info("Данные записанные");
 
-        } catch (TransformerException | FileNotFoundException e) {
+        } catch (TransformerException e) {
             e.printStackTrace(System.out);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 

@@ -3,11 +3,11 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.NodeList;
 
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class Modification {
 
-    private static Logger log = Logger.getLogger(Modification.class.getName());
+    private static Logger log = Logger.getLogger(Modification.class);
 
     public static void addElementXML(Document doc){
         addElement(doc);

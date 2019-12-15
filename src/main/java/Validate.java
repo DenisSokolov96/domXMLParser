@@ -7,11 +7,11 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import java.io.File;
 import java.io.IOException;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class Validate {
 
-    private static Logger log = Logger.getLogger(Validate.class.getName());
+    private static Logger log = Logger.getLogger(Validate.class);
 
     public static void getValidateXML() throws IOException, SAXException {
         validateXML();

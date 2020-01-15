@@ -21,7 +21,7 @@ public class Validate {
 
         SchemaFactory factory2 = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
 
-        File schemaLocation = new File("/home/denis/IntelliJIDEAProjects/xmlParser/src/main/resources/Univer.xsd");
+        File schemaLocation = new File("/home/denis/IntelliJIDEAProjects/xmlParser/src/main/resources/UniverNew.xsd");
         Schema schema = factory2.newSchema(schemaLocation);
 
         Validator validator = schema.newValidator();

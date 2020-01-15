@@ -68,7 +68,10 @@ public class MainClass {
                 }
             }
             else {
-                String s =changeattribut(node.getNodeName());
+                String s = " ";
+                if (changeattribut(node.getNodeName())!="Кафедра")
+                s =changeattribut(node.getNodeName());
+
                 tab(s,t);
                 NamedNodeMap attributes = node.getAttributes();
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><database>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><database xmlns="http://ru.rsatu/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ru.rsatu/ UniverNew.xsd">
     <university name="РГАТУ">
         <facultys>
             <faculty name="ФАД">

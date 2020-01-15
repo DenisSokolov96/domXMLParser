@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://ru.rsatu/"
+           xmlns="http://ru.rsatu/">
+
+  <xs:element name="database" type="databaseType"/>
+  <xs:complexType name="groupType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="optional"/>
+        <xs:attribute type="xs:string" name="val" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="groupsType">
+    <xs:sequence>
+      <xs:element type="groupType" name="group" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="departmentType">
+    <xs:sequence>
+      <xs:element type="groupsType" name="groups"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="departmentsType">
+    <xs:sequence>
+      <xs:element type="departmentType" name="department" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="facultyType">
+    <xs:sequence>
+      <xs:element type="departmentsType" name="departments"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="facultysType">
+    <xs:sequence>
+      <xs:element type="facultyType" name="faculty" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="universityType">
+    <xs:sequence>
+      <xs:element type="facultysType" name="facultys"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name"/>
+  </xs:complexType>
+  <xs:complexType name="databaseType">
+    <xs:sequence>
+      <xs:element type="universityType" name="university"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

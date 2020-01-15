@@ -38,7 +38,7 @@ public class MainClass {
         Validate.getValidateXML();
     }
 
-    public static void setInfo(Document document) throws TransformerFactoryConfigurationError, DOMException, IOException, SAXException {
+    public static void setInfo(Document document) throws TransformerFactoryConfigurationError, DOMException {
 
         String element = "university";
         NodeList matchedElementsList = document.getElementsByTagName(element);
